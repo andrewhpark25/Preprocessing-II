@@ -1,1 +1,32 @@
 // Mixins in here
+
+.space() {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+  }
+
+  .design(@background-color; @color; @padding) {
+     background-color: @background-color;
+     color: @color;
+     padding: @padding;
+
+  }
+  .design2(@radius; @width; @size) {
+      border-radius: @radius;
+      width: @width;
+      font-size: @size;
+  }
+  
+   .column() {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+  }
+
+  .animation(@arguments) {
+      -webkit-transform: @arguments;
+      -ms-transform: @arguments;
+       transform : @arguments;
+  }
+  
