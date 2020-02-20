@@ -1,13 +1,48 @@
-.home {
 
+header {
+  padding-bottom: 36px;
+  padding-top: 100px;
+
+
+  h1 {
+    display:flex;
+    float:left;
+      position: relative;
+      margin: 0px 15px 15px 0px;
+  }
+      @media @mobile {
+          
+            .column();
+            width: 100%;
+            padding: 7px;
+            align-items:center;
+        }
+
+
+}
+
+
+.home {
+  
+   .intro {
+     .bus {
+      border-top: 2px dashed @navigation-border;
+     }
+     h2 {
+       margin-top: 30px;
+       margin-left: 20px;
+     }
+     p {
+       margin-left: 20px;
+     }
+   }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
+    padding-top: 30px;
+    border-top: 2px dashed @navigation-border;
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -21,20 +56,37 @@
         border-radius: 10px;
       }
     }
+    @media @mobile {
+     .column();
+      width: 200%;
+      padding: 5px;
+      padding-top:30px;
+      margin-left: 20px;
+    }
   }
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
+   border-bottom: 2px dashed @navigation-border;
+   border-top: none;
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+   
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    
+    }
+    @media @mobile {
+      margin-top: -35px;
+      display: flex;
+      flex-direction:column-reverse;
+      .img-content {
+        padding-left:1%;
+      }
     }
   }
 
@@ -44,6 +96,11 @@
 
     img {
       border-radius: 10px;
+    }
+    @media @mobile {
+      width: 95%;
+      padding: 5px;
+      margin-left: 20px;
     }
   }
 
@@ -56,6 +113,24 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        .design(@eastern-blue, @white, 15px 32px);
+        .design2(20px, 80%, 17px);
+        &:hover {
+          .animation(scale(1.3));
+        }
+      }
+    }
+    @media @mobile {
+      .column();
+      .destination {
+        width: 80%;
+        padding: 3px;
+        align-self: center;
+        .btn {
+          .design2(30px; 100%; 17px;)
+        }
+      }
     }
   }
 }// home

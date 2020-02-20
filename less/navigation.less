@@ -1,1 +1,36 @@
 // Navigation Styles here
+
+
+.navigation{
+    .space();
+    width: 60%;
+    padding: 10px 3%;
+    font-size: 14px;
+    float:right;
+    a {
+          flex-direction: row;
+          text-decoration:none;
+          color:inherit;
+        }
+	& a:hover {
+                color: gray;
+              }  
+            @media @mobile {
+                display:flex;
+                flex-direction:row;
+                width: 100%;
+                padding:0;
+                margin:0;
+                margin-bottom: -5px;
+              
+                a {
+                    width: 80%;
+                    padding: 10px 0;
+                    text-align: center;
+                    align-items:stretch;
+                   
+                }    
+            }       
+            
+}
+ 
